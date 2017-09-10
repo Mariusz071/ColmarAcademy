@@ -55,4 +55,5 @@ b {
 
 .navbar li {
   display: inline;
+  margin: 0 8px;
 }
