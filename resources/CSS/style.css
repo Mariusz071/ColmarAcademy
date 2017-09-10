@@ -5,6 +5,16 @@ html {
   color: rgb(48,48,48)
 }
 
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+h4{
+  font-size:1.25rem;
+  font-weight: 700;
+}
+
 /*h1, h2, h3 {
   font-family: 'Anton', sans-serif;
 }*/
@@ -62,16 +72,15 @@ b {
 
 /*Banner*/
 .banner {
-  width: 100%;
+  width: auto%;
   height: 100%;
-  padding: 32px 24px;
+  padding: 32px 24px 32px 24px;
   background-color: rgb(214, 210, 224);
   display: flex;
   align-items: center;
 }
 
-.banner img,
-.main img {
+.banner img {
   width: 60%;
   height: auto;
   margin-right: 24px;
@@ -85,10 +94,7 @@ b {
   font-size: 1.25rem;
 }
 
-.learn h2 {
-  font-size: 2rem;
-  font-weight: 800;
-}
+
 
 .learn p {
   margin: 20px 0;
@@ -108,4 +114,76 @@ b {
 
 .button a{
   color: white !important;
+}
+
+/*Main*/
+.main {
+  width: auto;
+  padding: 0 0 32px 24px;
+}
+
+.left img {
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.left /*Quote and image*/ {
+  width: 60%;
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 32px;
+  margin-right: 32px;
+}
+
+.left p /*Quote and author under the image*/ {
+  margin-top: 24px;
+}
+
+.right /*Info news - column of info-wrappers*/ {
+  min-height: 100%;
+  width: 37%;
+  padding-left: 1px;
+  vertical-align: top;
+  /*background-color: rgb(214, 210, 224);*/
+  display: inline-flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.info-wrapper /* styling of news divs*/ {
+  background-color: white;
+  width: 100%;
+  display:inline-flex;
+  align-items: center;
+  border-left: 1px solid rgb(214, 210, 224);
+  border-bottom: 3px solid rgb(214, 210, 224);
+}
+
+.info-wrapper p {
+  margin: 8px 0;
+}
+
+.info-wrapper a /*Hyperlinks within info-wrapper*/ {
+  color: 	rgb(0, 64, 255);
+}
+
+.info-wrapper img /*image in each news div*/{
+  width: 35%;
+  height: auto;
+  display: inline-flex;
+  margin: 16px;
+}
+
+.info /*Text within info-wrapper*/ {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+/*Info-wrapper pseudo-classes*/
+.info-wrapper:first-child {
+  padding-top: 16px;
+}
+
+.info-wrapper:last-child {
+  background-color: rgb(214, 210, 224);
 }
