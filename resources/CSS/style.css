@@ -1,3 +1,58 @@
-h1 {
-  font-size:100px;
+/*General styling*/
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-family: 'Anton', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+b {
+  font-weight: bold;
+}
+
+.container {
+  margin: 0 24px;
+  width: auto;
+}
+
+.jumbotron {
+  margin: 32px 72px;
+}
+
+/*Header*/
+.header{
+  width: auto;
+  height: 64px;
+  display:flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+
+.logo img{
+  height: 32px;
+  width: auto;
+  display: inline-flex;
+}
+
+.logo{
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+}
+
+ .navbar {
+   display:inline-flex;
+   align-items: center;
+}
+
+.navbar li {
+  display: inline;
 }
