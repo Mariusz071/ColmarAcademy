@@ -57,6 +57,10 @@ b {
    align-items: center;
 }
 
+.navbar #mobile {
+  display: none;
+}
+
 .navbar li {
   display: inline;
   margin: 0 8px;
@@ -131,15 +135,18 @@ b {
   margin-top: 24px;
 }
 
+.right #mobile-img {
+  display: none;
+}
+
 .right /*Info news - column of info-wrappers*/ {
   min-height: 100%;
   width: 37%;
-  padding-left: 1px;
   vertical-align: top;
-  /*background-color: rgb(214, 210, 224);*/
   display: inline-flex;
   flex-direction: column;
   margin: 0;
+  text-align: left;
 }
 
 .info-wrapper /* styling of news divs*/ {
@@ -195,6 +202,10 @@ b {
 .arts /*flex container for arts*/{
   display:flex;
   flex-wrap: wrap;
+}
+
+.arts .mobile-arts {
+  display:none;
 }
 
 .art-wrapper{
@@ -270,4 +281,139 @@ b {
 .footer li {
   display: inline;
   margin: 10px;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width:470px){
+ .header .logo p {
+   display:none;
+ }
+
+ .header ul {
+   display: none;
+ }
+
+ .header {
+   justify-content: center;
+ }
+.header .logo {
+  margin: 0 2rem;
+}
+ .header #mobile {
+   display: inline-flex;
+   margin: 0 2rem;
+ }
+
+ .banner {
+   margin: 0;
+   padding:0 0 32px 0;
+   flex-direction: column;
+ }
+
+ .banner img{
+   margin: 0 0 32px 0;
+   width: 100%
+ }
+
+ .learn {
+   padding: 0 0 16px 16px;
+   margin: 0;
+   width: 100%;
+ }
+
+ .button {
+   text-align: center;
+   width: 80%;
+   margin: 0 auto;
+ }
+
+ .main {
+   padding: 16px;
+ }
+
+ .main .left {
+   display: none;
+ }
+
+ .main .right {
+   width: 100%;
+   padding: 0;
+   margin: 0;
+ }
+
+ .main .info-wrapper {
+   flex-direction: column;
+   margin: 0;
+   padding: 0;
+ }
+
+ .main #desktop-img {
+   display: none;
+ }
+
+ .main #mobile-img {
+  display: block;
+  width: 100%;
+ }
+
+ .info {
+   padding: 0;
+   margin: 0;
+   text-align: left;
+   width: 100%;
+   padding-left: 32px;
+}
+
+.info-wrapper:last-child {
+  background-color: white;
+}
+
+.jumbotron {
+  background-color: white;
+}
+
+.art-wrapper {
+  display: none;
+}
+
+.arts .mobile-arts {
+  display:block;
+  width: 80%;
+  margin: 16px 0 24px 0;
+}
+
+.mobile-arts li {
+  background-color: rgb(222, 222, 224);
+  text-align: left;
+  padding: 16px 0 24px 16px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.thesis .right {
+  display: none;
+}
+
+.thesis {
+  padding: 32px 0 16px 0;
+  justify-content: center;
+}
+
+.thesis h2 {
+  margin-bottom: -16px;
+}
+
+.thesis .left {
+  width: 100%;
+}
+
+.thesis h4, p {
+  display: none;
+}
+.footer {
+  padding: 16px 0 16px 16px;
+}
+.footer ul {
+  display: none;
+}
 }
