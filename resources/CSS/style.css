@@ -33,10 +33,6 @@ b {
   width: auto;
 }
 
-.jumbotron {
-  margin: 32px 72px;
-}
-
 /*Header*/
 .header{
   margin: 0 24px;
@@ -186,4 +182,50 @@ b {
 
 .info-wrapper:last-child {
   background-color: rgb(214, 210, 224);
+}
+
+/*Arts section*/
+.jumbotron {
+  background-color: rgb(222, 222, 224);
+  width: auto;
+  padding: 32px 56px;
+  vertical-align: bottom;
+}
+
+.jumbotron h2 /*Header in arts section*/{
+  margin-bottom: 16px;
+  text-align: center;
+  min-width: 100%
+}
+
+.arts /*flex container for arts*/{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.art-wrapper{
+  display: inline-flex;
+  flex-direction: column;
+  width: 30%;
+  margin:16px;
+
+}
+
+.art-description /*styling of description of each art*/{
+  background-color: white;
+  display:flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 16px 40px 24px 16px;
+  align-self: stretch;
+  flex: 1; /*makes the height equal*/
+}
+
+#courses {
+  text-transform: uppercase;
+}
+
+.art-description p {
+  line-height: 2;
 }
