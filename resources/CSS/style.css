@@ -147,8 +147,6 @@ b {
   width: 100%;
   display:inline-flex;
   align-items: center;
-  border-left: 1px solid rgb(214, 210, 224);
-  border-bottom: 3px solid rgb(214, 210, 224);
 }
 
 .info-wrapper p {
@@ -197,7 +195,6 @@ b {
 .arts /*flex container for arts*/{
   display:flex;
   flex-wrap: wrap;
-  align-items: stretch;
 }
 
 .art-wrapper{
@@ -246,11 +243,31 @@ b {
 
 .thesis #fisma {
   background-color: rgb(214, 210, 224);
-  border: none;
 }
 
 .thesis #now {
   background-color:white;
-  border: none;
   padding: 16px 0 16px 0px;
+}
+
+/*Footer*/
+.footer {
+  font-size: 0.75rem;
+  padding: 16px 24px 32px 24px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  display: inline-flex;
+}
+
+.footer ul {
+  display: inline-flex;
+}
+
+.footer li {
+  display: inline;
+  margin: 10px;
 }
