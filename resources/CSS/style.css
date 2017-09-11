@@ -15,10 +15,6 @@ h4{
   font-weight: 700;
 }
 
-/*h1, h2, h3 {
-  font-family: 'Anton', sans-serif;
-}*/
-
 a {
   text-decoration: none;
   color: black;
@@ -57,7 +53,7 @@ b {
    align-items: center;
 }
 
-.navbar #mobile {
+.navbar #mobile /*mobile version of navbar*/ {
   display: none;
 }
 
@@ -66,7 +62,7 @@ b {
   margin: 0 8px;
 }
 
-/*Banner*/
+/*Banner section*/
 .banner {
   width: auto%;
   height: 100%;
@@ -83,21 +79,18 @@ b {
   display:inline-block;
 }
 
-.learn {
+.learn /*text by the img within .banner*/ {
   display: inline-flex;
   flex-direction: column;
   height: 100%;
   font-size: 1.25rem;
 }
 
-
-
 .learn p {
   margin: 20px 0;
 }
 
-/*button within banner section*/
-.button {
+.button /*Banner - button*/ {
   text-align: center;
   font-size: 1rem;
   width: 100%;
@@ -123,7 +116,7 @@ b {
   width: 100%;
 }
 
-.left /*Quote and image*/ {
+.left /*Quote and image section*/ {
   width: 60%;
   display: inline-flex;
   flex-direction: column;
@@ -135,7 +128,7 @@ b {
   margin-top: 24px;
 }
 
-.right #mobile-img {
+.right /*mobile version of the images*/ #mobile-img {
   display: none;
 }
 
@@ -149,7 +142,7 @@ b {
   text-align: left;
 }
 
-.info-wrapper /* styling of news divs*/ {
+.info-wrapper /*container for news divs*// {
   background-color: white;
   width: 100%;
   display:inline-flex;
@@ -186,7 +179,7 @@ b {
 }
 
 /*Arts section*/
-.jumbotron {
+.jumbotron /*container for arts section*/ {
   background-color: rgb(222, 222, 224);
   width: auto;
   padding: 32px 56px;
@@ -204,11 +197,11 @@ b {
   flex-wrap: wrap;
 }
 
-.arts .mobile-arts {
+.arts .mobile-arts /*mobile version of mobile art containing divs*/ {
   display:none;
 }
 
-.art-wrapper{
+.art-wrapper /*container for separate arts*/{
   display: inline-flex;
   flex-direction: column;
   width: 30%;
@@ -274,7 +267,7 @@ b {
   display: inline-flex;
 }
 
-.footer ul {
+.footer ul /*terms and pricasy within footer*/ {
   display: inline-flex;
 }
 
@@ -284,26 +277,28 @@ b {
 }
 
 /*MEDIA QUERIES*/
-@media only screen and (max-width:470px){
+@media only screen and (max-width:480px), (orientation: portrait) {
  .header .logo p {
    display:none;
  }
 
- .header ul {
+ .header ul /*desktop navbar*/ {
    display: none;
  }
-
+/*Header re-styling*/
  .header {
    justify-content: center;
  }
 .header .logo {
   margin: 0 2rem;
 }
- .header #mobile {
+ .header #mobile  {
    display: inline-flex;
    margin: 0 2rem;
  }
 
+
+/*Banner re-styling*/
  .banner {
    margin: 0;
    padding:0 0 32px 0;
@@ -327,11 +322,12 @@ b {
    margin: 0 auto;
  }
 
+/*Main re-styling*/
  .main {
    padding: 16px;
  }
 
- .main .left {
+ .main .left  {
    display: none;
  }
 
@@ -368,6 +364,7 @@ b {
   background-color: white;
 }
 
+/*Arts re-styling*/
 .jumbotron {
   background-color: white;
 }
@@ -390,6 +387,8 @@ b {
   font-weight: bold;
 }
 
+
+/*Thesis re-styling*/
 .thesis .right {
   display: none;
 }
@@ -410,6 +409,8 @@ b {
 .thesis h4, p {
   display: none;
 }
+
+/*footer re-styling*/
 .footer {
   padding: 16px 0 16px 16px;
 }
